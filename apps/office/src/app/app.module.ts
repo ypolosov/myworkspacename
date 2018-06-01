@@ -20,6 +20,6 @@ import { uiRoutes } from '@myworkspacename/ui';
 })
 export class AppModule {
   constructor() {
-    // console.log('xxx');
+    console.log('xxx');
   }
 }
