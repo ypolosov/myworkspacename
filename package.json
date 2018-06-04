@@ -10,12 +10,14 @@
     "test": "ng test",
     "lint": "./node_modules/.bin/nx lint && ng lint",
     "e2e": "ng e2e",
-    "affected:apps":
-      "./node_modules/.bin/nx affected:apps $(git merge-base origin/master HEAD) HEAD",
+    "affected:apps": "./node_modules/.bin/nx affected:apps",
+    "affected:apps:prod": "bash ./scripts/affected-apps.sh",
     "affected:build": "./node_modules/.bin/nx affected:build",
     "affected:e2e": "./node_modules/.bin/nx affected:e2e",
     "affected:test": "./node_modules/.bin/nx affected:test",
     "affected:dep-graph": "./node_modules/.bin/nx affected:dep-graph",
+    "affected:dep-graph:prod":
+      "./node_modules/.bin/nx affected:dep-graph $(git merge-base origin/master HEAD) HEAD",
     "format": "./node_modules/.bin/nx format:write",
     "format:write": "./node_modules/.bin/nx format:write",
     "format:check": "./node_modules/.bin/nx format:check",
