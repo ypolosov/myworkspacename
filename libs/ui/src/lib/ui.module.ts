@@ -9,5 +9,6 @@ export const uiRoutes: Route[] = [];
 export class UiModule {
   constructor() {
     console.log('xxx');
+    console.log('xxx');
   }
 }
